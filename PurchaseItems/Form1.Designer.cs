@@ -46,6 +46,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.txtChange = new System.Windows.Forms.TextBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -239,12 +240,26 @@
             this.txtChange.Size = new System.Drawing.Size(117, 23);
             this.txtChange.TabIndex = 15;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(336, 388);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(91, 30);
+            this.btnLogout.TabIndex = 16;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // frmPurchaseDiscountedItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(453, 390);
+            this.ClientSize = new System.Drawing.Size(453, 438);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmPurchaseDiscountedItem";
@@ -278,6 +293,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtChange;
         private System.Windows.Forms.TextBox txtTotalAmount;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
 
